@@ -46,5 +46,5 @@ dataset = pd.DataFrame({
 
 # print(dataset['Idade'].mean())
 
-print(dataset.groupby('Sexo').mean().loc['H'])
-
+# print(dataset.groupby('Sexo').mean().loc['H'])
+print(dataset.groupby(['Sexo']).std().loc['M'])
